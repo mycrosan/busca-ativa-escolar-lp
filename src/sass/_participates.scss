@@ -1,0 +1,68 @@
+.participates--wrapper {
+	@extend .clearfix;
+
+	width: 95%;
+	max-width: 1010px;
+
+	display: block;
+	position: relative;
+
+	margin: 0 auto;
+
+	@media (max-width: $baseWidth) {
+		padding-left: 15px !important;
+		padding-right: 15px !important;
+	}
+
+	.participates--subtitle {
+		width: 100%;
+		max-width: 530px;
+
+		margin: 0 auto;
+
+		text-align: center;
+	}
+
+	.participates--topics--row {
+		@extend .clearfix;
+
+		width: 100%;
+		margin: 20px auto;
+
+		.participates--topics--col {
+			@extend .clearfix;
+
+			float: left;
+
+			width: calc(100% / 3);
+			height: 250px;
+			padding: 0 20px;
+
+			.dot {
+				width: 38px;
+				height: 38px;
+
+				display: block;
+
+				border-radius: 20px 20px 20px 20px;
+				-moz-border-radius: 20px 20px 20px 20px;
+				-webkit-border-radius: 20px 20px 20px 20px;
+
+				background: $blue;
+				margin: 15px auto;
+			}
+
+			h3 {
+				text-align: center;
+
+				font-size: 21px;
+				font-family: $fontPri;
+
+				color: $blue;
+				line-height: 1;
+			}
+
+			p { text-align: center; }
+		}
+	}
+}

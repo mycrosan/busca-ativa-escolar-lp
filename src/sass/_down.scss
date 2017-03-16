@@ -1,0 +1,122 @@
+.down--wrapper {
+	@extend .clearfix;
+
+	width: 95%;
+	max-width: 780px;
+
+	display: block;
+	position: relative;
+
+	margin: 0 auto;
+
+	@media (max-width: $baseWidth) {
+		padding-left: 15px !important;
+		padding-right: 15px !important;
+	}
+
+	.down--subtitle {
+		width: 100%;
+		max-width: 720px;
+
+		margin: 0 auto;
+
+		text-align: center;
+	}
+
+	.down--topics--row {
+		@extend .clearfix;
+
+		width: 100%;
+		margin: 20px auto;
+
+		.down--topics--col {
+			@extend .clearfix;
+
+			float: left;
+
+			width: calc(100% / 3);
+			height: 450px;
+			padding: 0 20px;
+
+			cursor: pointer;
+
+			&:hover {
+				.img-hover { &:before, &:after { opacity: 1; } }
+				h5 { a { color: $darkgrey; } }
+				p { color: $black; }
+			}
+
+			.img-hover {
+				width: 180px;
+				height: 160px;
+
+				display: block;
+
+				margin: 25px auto;
+
+				border-radius: 6px 6px 6px 6px;
+				-moz-border-radius: 6px 6px 6px 6px;
+				-webkit-border-radius: 6px 6px 6px 6px;
+
+				box-shadow: -2.847px 6.395px 24px 0px rgba( 72, 72, 72, 0.2 );
+				background: #044f6f;
+
+				overflow: hidden;
+				position: relative;
+
+				cursor: pointer;
+
+				&:after {
+					content: '';
+
+					background: image-url('ico-arrow-down.png') no-repeat;
+					background-position: center center;
+
+					width: 40px;
+					height: 40px;
+
+					position: absolute;
+					top: 60px;
+					left: 70px;
+
+					opacity: 0;
+				}
+
+				&:before {
+					content: '';
+
+					position: absolute;
+
+					width: 200px;
+					height: 200px;
+
+					top: 0;
+					left: 0;
+
+					background: rgba( 0, 0, 0, 0.5 );
+
+					opacity: 0;
+				}
+			}
+
+			h5 {
+				text-align: center;
+
+				a {
+					font-size: 21px;
+					font-family: $fontPri;
+
+					color: $blue;
+					line-height: 1;
+
+					span { font-size: 35px; }
+				}
+			}
+
+			p {
+				text-align: center;
+				color: $darkgrey;
+			}
+		}
+	}
+}

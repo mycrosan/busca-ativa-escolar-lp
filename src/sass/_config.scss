@@ -1,0 +1,27 @@
+/* Colors */
+$white: #FFFFFF;
+$black: #000000;
+
+$blue: #009cde;
+
+$grey: #f4f4f4;
+$darkgrey: #4f4f4f;
+
+$yellow: #eecb3d;
+$brightyellow: #f1d564;
+
+/* Font families */
+$fontPri: HelveticaRounded;
+$fontSec: 'Raleway', sans-serif;
+
+/* Sizes */
+$baseWidth: 1170px;
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,700');
+
+/* Fonts */
+@font-face {
+	font-family: HelveticaRounded;
+	src: url("../fonts/HelveticaRoundedLTStd-Bd.otf") format("opentype");
+}

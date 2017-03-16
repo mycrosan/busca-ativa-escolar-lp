@@ -1,0 +1,61 @@
+.initiative--wrapper {
+	@extend .clearfix;
+
+	width: 95%;
+	max-width: 1060px;
+
+	display: block;
+	position: relative;
+
+	margin: 0 auto;
+
+	@media (max-width: $baseWidth) {
+		padding-left: 15px !important;
+		padding-right: 15px !important;
+	}
+
+	.initiative--cols {
+		@extend .clearfix;
+
+		.initiative--col-left {
+			@extend .clearfix;
+
+			float: left;
+
+			width: calc(100% / 12 * 9);
+			padding: 0 20px 0 0;
+
+			text-align: right;
+
+			position: relative;
+
+			&:before {
+				content: '';
+
+				position: absolute;
+				right: 0;
+				top: 50px;
+
+				display: block;
+
+				height: 140px;
+				width: 1px;
+				background: $blue;
+
+				z-index: 10;
+			}
+		}
+		.initiative--col-right {
+			@extend .clearfix;
+
+			float: left;
+
+			width: calc(100% / 12 * 3);
+			padding: 0 0 0 20px;
+
+			img {
+				display: block;
+			}
+		}
+	}
+}

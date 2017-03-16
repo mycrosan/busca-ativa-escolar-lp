@@ -1,0 +1,9 @@
+*.git*
+*.sass-cache*
+do-not-pack.lst
+*psds*
+*node_modules*
+release.zip
+src.zip
+*.DS_Store*
+*.idea*

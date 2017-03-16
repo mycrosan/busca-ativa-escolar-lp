@@ -1,0 +1,16 @@
+.about--wrapper {
+	@extend .clearfix;
+
+	width: 95%;
+	max-width: 1010px;
+
+	display: block;
+	position: relative;
+
+	margin: 0 auto;
+
+	@media (max-width: $baseWidth) {
+		padding-left: 15px !important;
+		padding-right: 15px !important;
+	}
+}

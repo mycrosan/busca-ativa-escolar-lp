@@ -1,0 +1,14 @@
+{
+	"name": "lqdi-boilerplate-frontend",
+	"description": "LQDI Digital - Boilerplate for front-end projects",
+	"version": "1.0.0",
+	"repository": "https://bitbucket.org/lqdi/lqdi-boilerplate-frontend",
+	"license": "Copyright @ LQDI Digital - www.lqdi.net",
+	"private": true,
+	"devDependencies": {
+		"gulp": "^3.8.8"
+	},
+	"scripts": {
+		"prestart": "npm install"
+	}
+}

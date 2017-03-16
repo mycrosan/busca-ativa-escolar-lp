@@ -1,0 +1,7 @@
+npm-debug.log
+node_modules
+.sass-cache
+.idea
+*.DS_Store*
+release.zip
+src.zip
