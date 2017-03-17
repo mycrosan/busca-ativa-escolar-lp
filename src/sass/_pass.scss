@@ -38,6 +38,23 @@
 			height: 450px;
 			padding: 0 20px;
 
+			display: block;
+
+			@media (max-width: 830px) {
+				width: calc(100% / 2);
+
+				&:last-child {
+					width: 100%;
+
+					display: block;
+					margin: 0 auto;
+				}
+			}
+
+			@media (max-width: 560px) {
+				width: 100%;
+			}
+
 			.icon {
 				width: 160px;
 				height: 160px;
@@ -101,7 +118,15 @@
 				span { font-size: 35px; }
 			}
 
-			p { text-align: center; }
+			p {
+				text-align: center;
+
+				@media (max-width: 830px) {
+					width: 100%;
+					max-width: 410px;
+					margin: 5px auto;
+				}
+			}
 		}
 	}
 }

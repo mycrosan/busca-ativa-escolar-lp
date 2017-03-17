@@ -35,8 +35,13 @@
 			float: left;
 
 			width: calc(100% / 3);
-			height: 250px;
+			min-height: 250px;
 			padding: 0 20px;
+
+			display: block;
+
+			@media (max-width: 830px) { width: calc(100% / 2); }
+			@media (max-width: 530px) { width: 100%; }
 
 			.dot {
 				width: 38px;

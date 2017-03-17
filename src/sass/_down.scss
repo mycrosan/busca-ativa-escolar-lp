@@ -35,10 +35,22 @@
 			float: left;
 
 			width: calc(100% / 3);
-			height: 450px;
+			height: 300px;
 			padding: 0 20px;
 
 			cursor: pointer;
+
+			@media (max-width: 750px) {
+				width: calc(100% / 2);
+
+				&:last-child {
+					width: 100%;
+
+					display: block;
+					margin: 0 auto;
+				}
+			}
+			@media (max-width: 550px) { width: 100%; }
 
 			&:hover {
 				.img-hover { &:before, &:after { opacity: 1; } }
