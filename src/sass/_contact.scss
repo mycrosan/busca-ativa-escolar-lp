@@ -41,6 +41,11 @@
 		}
 
 		form {
+			::-webkit-input-placeholder { color: $blue; }
+			::-moz-placeholder { color: $blue; }
+			:-ms-input-placeholder { color: $blue; }
+			:-moz-placeholder { color: $blue; }
+
 			.form-row {
 				@extend .clearfix;
 				width: 100%;

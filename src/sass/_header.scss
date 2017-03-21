@@ -10,22 +10,25 @@ header {
 		z-index: 9999;
 
 		h1 {
-			font-size: 23px;
-			font-family: $fontPri;
-			font-weight: bold;
+			background: image-url('logo-busca-ativa-escolar.png') no-repeat;
 
-			color: rgb( 255, 255, 255 );
+			background-size: cover;
 
-			text-transform: uppercase;
-			text-align: center;
+			text-indent: -9999px;
+			overflow: hidden;
+			float: left;
 
-			line-height: 0.9;
+			width: 158px;
+			height: 51px;
+
+			cursor: pointer;
+
+			position: relative;
+			z-index: 100;
 
 			float: left;
 
 			margin: 28px 0 0 0;
-
-			span { font-size: 32px; }
 		}
 
 		.hamburger {
@@ -124,8 +127,6 @@ header {
 				}
 
 				li {
-					min-height: 105px;
-
 					display: table;
 					margin: 0 25px;
 

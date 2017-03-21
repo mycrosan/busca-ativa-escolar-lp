@@ -10,6 +10,7 @@ $(function() {
 				$('html, body').animate({
 					scrollTop: target.offset().top -90
 				}, 1000);
+				$('#nav').toggleClass("open");
 				return false;
 			}
 		}
