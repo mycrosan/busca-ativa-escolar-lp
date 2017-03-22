@@ -801,14 +801,15 @@ footer .footer--wrapper {
     position: relative; }
     @media (max-width: 1120px) {
       .info--wrapper .info {
-        background: url('../../images/?1490115678') no-repeat;
+        background: url('../../images/?1490127549') no-repeat;
         margin: 0 auto; } }
     .info--wrapper .info .info--img-resp--container {
       display: none; }
       @media (max-width: 1120px) {
         .info--wrapper .info .info--img-resp--container {
           width: 100%;
-          float: left; }
+          float: left;
+          display: block; }
           .info--wrapper .info .info--img-resp--container .info--img-resp {
             width: 100%;
             max-width: 460px;
