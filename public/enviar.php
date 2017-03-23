@@ -5,8 +5,7 @@ if (empty($_POST)) {die(json_encode(["status" => false, "mensagem" => "requisiç
 
 require '../vendor/autoload.php';
 use Mailgun\Mailgun;
-
-$dotenv = new Dotenv\Dotenv(__DIR__);
+$dotenv = new Dotenv\Dotenv(__DIR__."/..");
 $dotenv->load();
 
 $post = [
