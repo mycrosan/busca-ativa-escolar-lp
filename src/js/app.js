@@ -1,4 +1,5 @@
 //=require libs/_10_masks.js
+//=require libs/_sweetalert.js
 
 // Scroll
 $(function() {
@@ -31,4 +32,24 @@ $(function() {
 	$('.mask-ddd').mask('(99)');
 	$('.mask-cep').mask('99999-999');
 	$('.mask-cpf').mask('999.999.999-99');
+});
+
+//AJAX
+$('form').submit(function(e) {
+	e.preventDefault();
+	var button = $(".button");
+	button.attr("disabled");
+	button.removeClass("yellow");
+	$.ajax({
+		method: this.method,
+		url: this.action,
+		data: $(this).serialize()
+		}
+	).done(function(data) {
+		button.removeAttr("disabled");
+		button.addClass("yellow");
+		data.status
+			? swal("Tudo certo!", data.mensagem, "success")
+			: swal("Ops...", data.mensagem, "error")
+	});
 });

@@ -349,7 +349,7 @@
 					Se você desejar falar conosco, preencha o formulário a seguir que entraremos em contato o mais breve possível
 				</p>
 
-				<form action="">
+				<form action="/enviar.php" method="post">
 					<div class="form-row">
 						<input type="text" name="name" placeholder="Seu nome" class="field-full" required>
 					</div>
@@ -380,7 +380,7 @@
 					</div>
 
 					<div class="form-row">
-						<textarea rows="4" cols="50" class="field-text">Escreva sua mensagem aqui!</textarea>
+						<textarea rows="4" cols="50" name="text" class="field-text">Escreva sua mensagem aqui!</textarea>
 					</div>
 
 					<button class="button yellow">
@@ -419,6 +419,7 @@
 
 		<script src="dist/js/libs.js"></script> <!-- Libraries -->
 		<script src="dist/js/app.js"></script> <!-- Development -->
+		<link rel="stylesheet" href="dist/css/sweetalert.css"/>
 		<!--script src="dist/js/app.min.js"></script--> <!-- Production -->
 
 	</body>
