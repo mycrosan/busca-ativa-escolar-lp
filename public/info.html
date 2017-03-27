@@ -65,13 +65,7 @@
 				</div>
 			</div>
 
-			<div class="header--banner">
-				<div class="wrapper">
-					<div class="img-desc">
-						Foto: Ratão Diniz
-					</div>
-				</div>
-			</div>
+			<br /><br /><br /><br /><br /><br /><br />
 		</header>
 
 		<section id="info">
@@ -198,7 +192,7 @@
 					Se você desejar falar conosco, preencha o formulário a seguir que entraremos em contato o mais breve possível
 				</p>
 
-				<form action="">
+				<form action="enviar.php">
 					<div class="form-row">
 						<input type="text" name="name" placeholder="Seu nome" class="field-full" required>
 					</div>
@@ -210,21 +204,11 @@
 
 					<div class="form-row">
 						<label class="select select-big">
-							<select name="mun" class="field" required>
-								<option value="">Município</option>
-								<option value=""></option>
-								<option value=""></option>
-								<option value=""></option>
-							</select>
+							<input type="text" name="mun" class="field" required placeholder="Município" />
 						</label>
 
 						<label class="select select-small">
-							<select name="mun" class="field" required>
-								<option value="">UF</option>
-								<option value=""></option>
-								<option value=""></option>
-								<option value=""></option>
-							</select>
+							<input type="text" name="mun" class="field" required placeholder="UF" />
 						</label>
 					</div>
 
@@ -268,6 +252,7 @@
 
 		<script src="dist/js/libs.js"></script> <!-- Libraries -->
 		<script src="dist/js/app.js"></script> <!-- Development -->
+		<link rel="stylesheet" href="dist/css/sweetalert.css"/>
 		<!--script src="dist/js/app.min.js"></script--> <!-- Production -->
 
 	</body>
