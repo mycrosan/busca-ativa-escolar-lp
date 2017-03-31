@@ -114,7 +114,11 @@ footer .footer--wrapper:after,
   font-family: HelveticaRounded;
   src: url("../fonts/HelveticaRoundedLTStd-Bd.otf") format("opentype"); }
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
 
 b, strong {
   font-weight: bold; }
@@ -235,7 +239,7 @@ header .navbar {
   position: fixed;
   z-index: 9999; }
   header .navbar h1 {
-    background: url('../../images/logo-busca-ativa-escolar.png?1490286771') no-repeat;
+    background: url('../../images/logo-busca-ativa-escolar.png?1490103098') no-repeat;
     background-size: cover;
     text-indent: -9999px;
     overflow: hidden;
@@ -245,7 +249,6 @@ header .navbar {
     cursor: pointer;
     position: relative;
     z-index: 100;
-    float: left;
     margin: 28px 0 0 0; }
   header .navbar .hamburger {
     display: none; }
@@ -315,7 +318,10 @@ header .navbar {
           margin: 25px 0; } }
       header .navbar nav ul li {
         display: table;
-        margin: 0 25px; }
+        margin: 0 23px; }
+        @media (max-width: 1170px) {
+          header .navbar nav ul li {
+            margin: 0 10px; } }
         @media (max-width: 1050px) {
           header .navbar nav ul li {
             width: 100%; } }
@@ -346,12 +352,11 @@ header .navbar {
                 border-left: 5px solid #eecb3d;
                 padding: 0px 0px 0px 5px; } }
 header .header--banner {
-  background: url('../../images/banner-bg.jpg?1490286771') no-repeat;
+  background: url('../../images/banner-bg.jpg?1489681297') no-repeat;
   background-position: center center;
   background-size: cover;
   width: 100%;
   height: 550px;
-  margin: 105px 0 0 0;
   box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.3); }
   header .header--banner .wrapper {
     position: relative;
@@ -601,7 +606,7 @@ header .header--banner {
         cursor: pointer; }
         .down--wrapper .down--topics--row .down--topics--col .img-hover:after {
           content: '';
-          background: url('../../images/ico-arrow-down.png?1490286771') no-repeat;
+          background: url('../../images/ico-arrow-down.png?1489694910') no-repeat;
           background-position: center center;
           width: 40px;
           height: 40px;
@@ -632,7 +637,7 @@ header .header--banner {
         color: #4f4f4f; }
 
 #contact {
-  background: url('../../images/bg-form.jpg?1490286771') no-repeat;
+  background: url('../../images/bg-form.jpg?1489759729') no-repeat;
   background-position: center center;
   background-size: cover;
   width: 100%;
@@ -723,7 +728,7 @@ header .header--banner {
       #contact .contact--wrapper form button:hover span i {
         background-position: bottom center; }
       #contact .contact--wrapper form button span i {
-        background: url('../../images/ico-arrow-right.png?1490286771') no-repeat;
+        background: url('../../images/ico-arrow-right.png?1489702138') no-repeat;
         background-position: top center;
         display: block;
         width: 13px;
@@ -765,7 +770,7 @@ footer .footer--wrapper {
     text-align: center;
     font-weight: 400; }
   .info--wrapper .info {
-    background: url('../../images/info-desk.png?1490286771') no-repeat;
+    background: url('../../images/info-desk.png?1489770167') no-repeat;
     background-position: center center;
     width: 100%;
     max-width: 740px;
@@ -775,7 +780,7 @@ footer .footer--wrapper {
     position: relative; }
     @media (max-width: 1120px) {
       .info--wrapper .info {
-        background: url('../../images/?1490288902') no-repeat;
+        background: url('../../images/?1490127549') no-repeat;
         margin: 0 auto; } }
     .info--wrapper .info .info--img-resp--container {
       display: none; }
