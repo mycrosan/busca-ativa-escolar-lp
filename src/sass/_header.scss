@@ -107,10 +107,10 @@ header {
 			}
 
 			ul {
-				width: 100%;
+				display: table;
 				min-height: 105px;
 
-				display: table;
+				float: right;
 
 				align-items: center;
 				align-content: center;
@@ -119,14 +119,14 @@ header {
 					display: table;
 					float: left;
 
-					margin: 44px 0 0 0;
+					margin: 44px 15px 0 15px;
 
 					text-align: center;
-					width: calc(100% / 6 - 0px);
 
 					@media (max-width: 1170px) {
 						width: 100%;
 						display: block;
+						margin: 10px 0 10px 0;
 					}
 
 					a {

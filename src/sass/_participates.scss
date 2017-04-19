@@ -40,8 +40,16 @@
 
 			display: block;
 
-			@media (max-width: 830px) { width: calc(100% / 2); }
-			@media (max-width: 530px) { width: 100%; }
+			@media (max-width: 830px) {
+				width: calc(100% / 2 - 1px);
+				min-height: 10px;
+				margin: 0 0 15px 0;
+			}
+			@media (max-width: 530px) {
+				width: 100%;
+				min-height: 10px;
+				margin: 0 0 15px 0;
+			}
 
 			.dot {
 				width: 38px;
