@@ -12,7 +12,7 @@ $yellow: #eecb3d;
 $brightyellow: #f1d564;
 
 /* Font families */
-$fontPri: HelveticaRounded;
+$fontPri: Helvetica Rounded LT Std;
 $fontSec: 'Raleway', sans-serif;
 
 /* Sizes */
@@ -21,8 +21,14 @@ $baseWidth: 1170px;
 /* Fonts */
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,700');
 
-/* Fonts */
 @font-face {
-	font-family: HelveticaRounded;
-	src: url("../fonts/HelveticaRoundedLTStd-Bd.otf") format("opentype");
+	font-family: 'Helvetica Rounded LT Std';
+	src: url('../fonts/HelveticaRoundedLTStd-Bd.eot');
+	src: url('../fonts/HelveticaRoundedLTStd-Bd.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/HelveticaRoundedLTStd-Bd.woff2') format('woff2'),
+	url('../fonts/HelveticaRoundedLTStd-Bd.woff') format('woff'),
+	url('../fonts/HelveticaRoundedLTStd-Bd.ttf') format('truetype'),
+	url('../fonts/HelveticaRoundedLTStd-Bd.svg#HelveticaRoundedLTStd-Bd') format('svg');
+	font-weight: bold;
+	font-style: normal;
 }
