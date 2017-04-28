@@ -42,7 +42,7 @@ try {
 	$result = $mgClient->sendMessage("$domain", [
 		'from'    => $from,
         'to'      => $to,
-        'replyTo' => $emailAddress,
+        'h:reply-to' => $emailAddress,
         'subject' => "[Busca Ativa Escolar] Contato via site - {$emailAddress}",
         'html'    => $body
 	]);
