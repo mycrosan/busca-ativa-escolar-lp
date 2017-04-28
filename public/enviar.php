@@ -17,7 +17,9 @@ $post = [
     "E-mail" => $_POST["mail"],
     "Telefone" => $_POST["tel"],
     "Municipio" => $_POST["mun"],
-    "Mensagem" => $_POST["text"]
+    "Mensagem" => $_POST["text"],
+    "Endereço IP" => $_SERVER['REMOTE_ADDR'],
+    "Navegador" => $_SERVER['HTTP_USER_AGENT'],
 ];
 
 $body = "Segue dados do contato: <br /><br />";
@@ -38,7 +40,7 @@ try {
 	$result = $mgClient->sendMessage("$domain", [
 		'from'    => $from,
         'to'      => $to,
-        'subject' => 'Novo envio de contato.',
+        'subject' => "[Busca Ativa Escolar] Contato via site - {$from}",
         'html'    => $body
 	]);
 
