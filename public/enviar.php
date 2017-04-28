@@ -42,8 +42,15 @@ try {
         'html'    => $body
 	]);
 
-} catch (Exception $e) {
-    die(json_encode(["status" => false, "mensagem" => "Ops! Estamos sem sistema no momento.", "exception" => $e]));
+} catch (\Exception $ex) {
+    die(json_encode([
+    	"status" => false,
+	    "mensagem" => "Ops! Estamos sem sistema no momento.",
+	    "exception" => $ex->getMessage(),
+    ]));
 }
 
-die(json_encode(["status" => true, "mensagem" => "Seu contato foi para análise, entraremos em contato assim que possível."]));
+die(json_encode([
+	"status" => true,
+	"mensagem" => "Seu contato foi para análise, entraremos em contato assim que possível."
+]));
