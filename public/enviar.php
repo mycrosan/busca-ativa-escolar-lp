@@ -36,11 +36,14 @@ $to = getenv("CONTACT_TO");
 
 $mgClient = new Mailgun($key);
 
+$emailAddress = filter_var($_POST['mail'], FILTER_SANITIZE_EMAIL);
+
 try {
 	$result = $mgClient->sendMessage("$domain", [
 		'from'    => $from,
         'to'      => $to,
-        'subject' => "[Busca Ativa Escolar] Contato via site - {$from}",
+        'replyTo' => $emailAddress,
+        'subject' => "[Busca Ativa Escolar] Contato via site - {$emailAddress}",
         'html'    => $body
 	]);
 
