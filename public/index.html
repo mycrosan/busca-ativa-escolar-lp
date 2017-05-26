@@ -11,7 +11,6 @@
 <html class="no-js" lang="en"><!--<![endif]-->
 
 <head>
-
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -21,9 +20,6 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" href="dist/css/libs.css"/>
-	<link rel="stylesheet" href="dist/css/app.css"/>
-
 	<meta name="author" content=""/>
 	<meta name="description" content=""/>
 
@@ -31,6 +27,146 @@
 	<meta property="og:description" content=""/>
 	<meta property="og:url" content=""/>
 	<meta property="og:image" content=""/>
+	<style>
+
+		header .navbar {
+			background: #009cde;
+			width: 100%;
+			min-height: 105px;
+			position: fixed;
+			z-index: 9999; }
+		header .navbar h1 {
+			background: url('../../images/logo-busca-ativa-escolar.png?1490286771') no-repeat;
+			background-size: cover;
+			text-indent: -9999px;
+			overflow: hidden;
+			float: left;
+			width: 158px;
+			height: 51px;
+			cursor: pointer;
+			position: relative;
+			z-index: 100;
+			float: left;
+			margin: 28px 0 0 0; }
+		header .navbar .hamburger {
+			display: none; }
+		@media (max-width: 1050px) {
+			header .navbar .hamburger {
+				float: right;
+				display: block;
+				position: relative;
+				border: 0;
+				text-indent: -9999px;
+				overflow: hidden;
+				background: transparent;
+				width: 40px;
+				height: 40px;
+				margin: 30px 0 0 0; }
+			header .navbar .hamburger span {
+				width: 100%;
+				height: 5px;
+				display: block;
+				margin: 18px 0;
+				background: #FFFFFF; }
+			header .navbar .hamburger:before, header .navbar .hamburger:after {
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 5px;
+				display: block;
+				background: #FFFFFF; }
+			header .navbar .hamburger:before {
+				top: 0px; }
+			header .navbar .hamburger:after {
+				bottom: 0px; } }
+		header .navbar nav {
+			float: right;
+			width: calc(100% - 180px);
+			min-height: 105px; }
+		@media (max-width: 1050px) {
+			header .navbar nav {
+				position: absolute;
+				top: 105px;
+				right: 0;
+				width: 100%;
+				max-width: 220px;
+				background: #f4f4f4;
+				-webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.08);
+				-moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.08);
+				box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.08);
+				display: none; }
+			header .navbar nav.open {
+				display: block; } }
+		@media (max-width: 360px) {
+			header .navbar nav {
+				width: 100%;
+				max-width: 100%; } }
+		header .navbar nav ul {
+			width: 100%;
+			min-height: 105px;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: flex-end;
+			align-items: center;
+			align-content: center; }
+		@media (max-width: 1050px) {
+			header .navbar nav ul {
+				display: table;
+				margin: 25px 0; } }
+		header .navbar nav ul li {
+			display: table;
+			margin: 0 25px; }
+		@media (max-width: 1050px) {
+			header .navbar nav ul li {
+				width: 100%; } }
+		header .navbar nav ul li a {
+			padding-bottom: 39px;
+			font-size: 13.4px;
+			font-family: "Raleway", sans-serif;
+			font-weight: bold;
+			color: #FFFFFF;
+			text-transform: uppercase;
+			line-height: 1.493;
+			text-decoration: none; }
+		@media (max-width: 1050px) {
+			header .navbar nav ul li a {
+				color: #000000;
+				padding: 0px 0px 0px 10px;
+				margin: 5px 0;
+				line-height: 2; } }
+		@media (max-width: 360px) {
+			header .navbar nav ul li a {
+				line-height: 3;
+				font-size: 15px; } }
+		header .navbar nav ul li a:active, header .navbar nav ul li a:hover {
+			border-bottom: 5px solid #eecb3d; }
+		@media (max-width: 1050px) {
+			header .navbar nav ul li a:active, header .navbar nav ul li a:hover {
+				border-bottom: 0px;
+				border-left: 5px solid #eecb3d;
+				padding: 0px 0px 0px 5px; } }
+		header .header--banner {
+			background: url('../../images/banner-bg.jpg?1490286771') no-repeat;
+			background-position: center center;
+			background-size: cover;
+			width: 100%;
+			height: 550px;
+			margin: 105px 0 0 0;
+			box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.3); }
+		header .header--banner .wrapper {
+			position: relative;
+			height: 100%; }
+		header:before, .wrapper:before, header .header--banner:before,
+		header:after,
+		.wrapper:after,
+		header .header--banner:after {
+			content: " ";
+			/* 1 */
+			display: table;
+			/* 2 */ }
+	</style>
+</head>
 
 	<body id="home">
 
@@ -404,6 +540,9 @@
 				</a>
 			</div>
 		</footer>
+
+		<link rel="stylesheet" href="dist/css/libs.css"/>
+		<link rel="stylesheet" href="dist/css/app.css"/>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
 
