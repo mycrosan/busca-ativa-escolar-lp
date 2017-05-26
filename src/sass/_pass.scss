@@ -34,14 +34,16 @@
 
 			float: left;
 
-			width: calc(100% / 3);
-			height: 450px;
+			width: calc(100% / 3 - 1px);
+			min-height: 450px;
 			padding: 0 20px;
 
 			display: block;
 
 			@media (max-width: 830px) {
-				width: calc(100% / 2);
+				width: calc(100% / 2 - 1px);
+				min-height: 10px;
+				margin: 0 0 15px 0;
 
 				&:last-child {
 					width: 100%;
@@ -53,6 +55,8 @@
 
 			@media (max-width: 560px) {
 				width: 100%;
+				min-height: 10px;
+				margin: 0 0 15px 0;
 			}
 
 			.icon {

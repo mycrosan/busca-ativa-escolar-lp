@@ -175,10 +175,14 @@
 </head>
 	<body id="home">
 
+		<div id="top"></div>
+
 		<header>
 			<div class="navbar">
 				<div class="wrapper">
-					<h1>Busca ativa escolar</h1>
+					<a href="#top">
+						<h1>Busca ativa escolar</h1>
+					</a>
 
 					<a href="#" class="hamburger">
 						<span></span>
@@ -196,10 +200,13 @@
 								<a href="index.html#pass">Como Participar</a>
 							</li>
 							<li>
+								<a href="index.html#down">Baixe os Materiais</a>
+							</li>
+							<li>
 								<a href="#contact">Contato</a>
 							</li>
 							<li>
-								<a href="http://panel.busca-ativa-escolar.dev.lqdi.net/login" target="_blank">Acessar Sistema</a>
+								<a href="http://www.plataforma.buscaativaescolar.org.br" target="_blank">Acessar Plataforma</a>
 							</li>
 						</ul>
 					</nav>
@@ -316,8 +323,8 @@
 					</div>
 				</div>
 
-				<a href="" class="button green">
-					Quero Participar!
+				<a href="https://plataforma.buscaativaescolar.org.br/sign_up" class="button green">
+					Acessar plataforma
 				</a>
 			</div>
 		</section>
@@ -333,28 +340,28 @@
 					Se você desejar falar conosco, preencha o formulário a seguir que entraremos em contato o mais breve possível
 				</p>
 
-				<form action="enviar.php">
+				<form action="/enviar.php" method="post">
 					<div class="form-row">
 						<input type="text" name="name" placeholder="Seu nome" class="field-full" required>
 					</div>
 
 					<div class="form-row">
 						<input type="email" name="mail" placeholder="Seu e-mail" class="field-half" required>
-						<input type="text" name="tel" placeholder="Seu telefone" class="field-half" required>
+						<input type="text" name="tel" placeholder="Seu telefone" class="field-half mask-phone" required>
 					</div>
 
 					<div class="form-row">
 						<label class="select select-big">
-							<input type="text" name="mun" class="field" required placeholder="Município" />
+							<input type="text" name="mun" class="field" placeholder="Município" required />
 						</label>
 
 						<label class="select select-small">
-							<input type="text" name="mun" class="field" required placeholder="UF" />
+							<input type="text" name="mun" class="field" placeholder="UF" required />
 						</label>
 					</div>
 
 					<div class="form-row">
-						<textarea rows="4" cols="50" class="field-text">Escreva sua mensagem aqui!</textarea>
+						<textarea rows="4" cols="50" name="text" class="field-text">Escreva sua mensagem aqui!</textarea>
 					</div>
 
 					<button class="button yellow">
