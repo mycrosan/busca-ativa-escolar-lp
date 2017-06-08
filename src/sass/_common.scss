@@ -5,8 +5,12 @@
 }
 
 b, strong { font-weight: bold; }
-
 a { text-decoration: none; }
+i  { font-style: italic; }
+sup {
+	font-size: 10px;
+	display: block;
+}
 
 .container {
 	@extend .clearfix;

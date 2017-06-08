@@ -126,6 +126,13 @@ b, strong {
 a {
   text-decoration: none; }
 
+i {
+  font-style: italic; }
+
+sup {
+  font-size: 10px;
+  display: block; }
+
 .container {
   display: block;
   position: relative;
@@ -484,7 +491,7 @@ footer {
         cursor: pointer; }
         .down--wrapper .down--topics--row .down--topics--col .img-hover:after {
           content: '';
-          background: url('../../images/ico-arrow-down.png?1490286771') no-repeat;
+          background: url('../../images/ico-arrow-down.png?1492618674') no-repeat;
           background-position: center center;
           width: 40px;
           height: 40px;
@@ -515,7 +522,7 @@ footer {
         color: #4f4f4f; }
 
 #contact {
-  background: url('../../images/bg-form.jpg?1490286771') no-repeat;
+  background: url('../../images/bg-form.jpg?1492618674') no-repeat;
   background-position: center center;
   background-size: cover;
   width: 100%;
@@ -606,7 +613,7 @@ footer {
       #contact .contact--wrapper form button:hover span i {
         background-position: bottom center; }
       #contact .contact--wrapper form button span i {
-        background: url('../../images/ico-arrow-right.png?1490286771') no-repeat;
+        background: url('../../images/ico-arrow-right.png?1492618674') no-repeat;
         background-position: top center;
         display: block;
         width: 13px;
@@ -648,7 +655,7 @@ footer .footer--wrapper {
     text-align: center;
     font-weight: 400; }
   .info--wrapper .info {
-    background: url('../../images/info-desk.png?1490286771') no-repeat;
+    background: url('../../images/info-desk.png?1492618674') no-repeat;
     background-position: center center;
     width: 100%;
     max-width: 740px;
@@ -658,7 +665,7 @@ footer .footer--wrapper {
     position: relative; }
     @media (max-width: 1120px) {
       .info--wrapper .info {
-        background: url('../../images/?1495818398') no-repeat;
+        background: url('../../images/?1496783976') no-repeat;
         margin: 0 auto; } }
     .info--wrapper .info .info--img-resp--container {
       display: none; }
