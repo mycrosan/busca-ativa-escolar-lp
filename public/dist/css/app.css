@@ -520,6 +520,17 @@ footer {
       .down--wrapper .down--topics--row .down--topics--col p {
         text-align: center;
         color: #4f4f4f; }
+    .down--wrapper .down--topics--row .down-manual ul {
+      margin: 30px 0 0 0; }
+      .down--wrapper .down--topics--row .down-manual ul li a {
+        font-size: 15px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 300;
+        color: #4f4f4f;
+        line-height: 1.667;
+        margin: 20px 0; }
+        .down--wrapper .down--topics--row .down-manual ul li a:hover {
+          color: #009cde; }
 
 #contact {
   background: url('../../images/bg-form.jpg?1492618674') no-repeat;
