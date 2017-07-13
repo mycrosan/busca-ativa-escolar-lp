@@ -438,7 +438,7 @@ footer {
 
 .down--wrapper {
   width: 95%;
-  max-width: 780px;
+  max-width: 1060px;
   display: block;
   position: relative;
   margin: 0 auto; }
@@ -456,7 +456,7 @@ footer {
     margin: 20px auto; }
     .down--wrapper .down--topics--row .down--topics--col {
       float: left;
-      width: calc(100% /3 - 1px);
+      width: calc(100% /4 - 1px);
       height: 300px;
       padding: 0 20px;
       cursor: pointer; }
@@ -676,7 +676,7 @@ footer .footer--wrapper {
     position: relative; }
     @media (max-width: 1120px) {
       .info--wrapper .info {
-        background: url('../../images/?1496783976') no-repeat;
+        background: url('../../images/?1497448542') no-repeat;
         margin: 0 auto; } }
     .info--wrapper .info .info--img-resp--container {
       display: none; }
