@@ -503,7 +503,11 @@ footer {
         cursor: pointer; }
         .down--wrapper .down--topics--row .down--topics--col .img-hover:after {
           content: '';
+<<<<<<< HEAD
           background: url('../../images/ico-arrow-down.png?1501856811') no-repeat;
+=======
+          background: url('../../images/ico-arrow-down.png?1492618674') no-repeat;
+>>>>>>> 20203c281d08c72827047c8da9c39918ef742c09
           background-position: center center;
           width: 40px;
           height: 40px;
@@ -545,7 +549,11 @@ footer {
           color: #009cde; }
 
 #contact {
+<<<<<<< HEAD
   background: url('../../images/bg-form.jpg?1501856811') no-repeat;
+=======
+  background: url('../../images/bg-form.jpg?1492618674') no-repeat;
+>>>>>>> 20203c281d08c72827047c8da9c39918ef742c09
   background-position: center center;
   background-size: cover;
   width: 100%;
@@ -636,7 +644,11 @@ footer {
       #contact .contact--wrapper form button:hover span i {
         background-position: bottom center; }
       #contact .contact--wrapper form button span i {
+<<<<<<< HEAD
         background: url('../../images/ico-arrow-right.png?1501856811') no-repeat;
+=======
+        background: url('../../images/ico-arrow-right.png?1492618674') no-repeat;
+>>>>>>> 20203c281d08c72827047c8da9c39918ef742c09
         background-position: top center;
         display: block;
         width: 13px;
@@ -678,7 +690,11 @@ footer .footer--wrapper {
     text-align: center;
     font-weight: 400; }
   .info--wrapper .info {
+<<<<<<< HEAD
     background: url('../../images/info-desk.png?1501856811') no-repeat;
+=======
+    background: url('../../images/info-desk.png?1492618674') no-repeat;
+>>>>>>> 20203c281d08c72827047c8da9c39918ef742c09
     background-position: center center;
     width: 100%;
     max-width: 740px;
@@ -688,7 +704,11 @@ footer .footer--wrapper {
     position: relative; }
     @media (max-width: 1120px) {
       .info--wrapper .info {
+<<<<<<< HEAD
         background: url('../../images/?1513278394') no-repeat;
+=======
+        background: url('../../images/?1497448542') no-repeat;
+>>>>>>> 20203c281d08c72827047c8da9c39918ef742c09
         margin: 0 auto; } }
     .info--wrapper .info .info--img-resp--container {
       display: none; }
