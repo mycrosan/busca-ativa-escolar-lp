@@ -10,8 +10,8 @@ header {
 		z-index: 9999;
 
 		h1 {
-			background: image-url('logo-busca-ativa-escolar.png') no-repeat;
-
+			background: image_url('logo-busca-ativa-escolar.png') no-repeat;
+			background-position: center center;
 			background-size: cover;
 
 			text-indent: -9999px;
@@ -172,8 +172,7 @@ header {
 
 	.header--banner {
 		@extend .clearfix;
-
-		background: image-url('banner-bg.jpg') no-repeat;
+		background: image_url('banner-bg.jpg') no-repeat;
 		background-position: center center;
 		background-size: cover;
 

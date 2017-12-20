@@ -29,7 +29,7 @@
 	.info {
 		@extend .clearfix;
 
-		background: image-url('info-desk.png') no-repeat;
+		background: image_url('info-desk.png') no-repeat;
 		background-position: center center;
 
 		width: 100%;
@@ -42,7 +42,7 @@
 		position: relative;
 
 		@media (max-width: 1120px) {
-			background: image-url('') no-repeat;
+			background: image_url('') no-repeat;
 			margin: 0 auto;
 		}
 
