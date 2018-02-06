@@ -172,6 +172,7 @@ header {
 
 	.header--banner {
 		@extend .clearfix;
+
 		background: image_url('banner-bg.jpg') no-repeat;
 		background-position: center center;
 		background-size: cover;
