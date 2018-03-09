@@ -260,7 +260,7 @@ header .navbar {
   position: fixed;
   z-index: 9999; }
   header .navbar h1 {
-    background: url('../../images/logo-busca-ativa-escolar.png?1501856811') no-repeat;
+    background: url('../../images/logo-busca-ativa-escolar.png?1518782796') no-repeat;
     background-position: center center;
     background-size: cover;
     text-indent: -9999px;
@@ -368,7 +368,7 @@ header .navbar {
                 border-left: 5px solid #eecb3d;
                 padding: 0px 0px 0px 5px; } }
 header .header--banner {
-  background: url('../../images/banner-bg.jpg?1501856811') no-repeat;
+  background: url('../../images/banner-bg.jpg?1518782796') no-repeat;
   background-position: center center;
   background-size: cover;
   width: 100%;
@@ -630,7 +630,7 @@ header .header--banner {
         cursor: pointer; }
         .down--wrapper .down--topics--row .down--topics--col .img-hover:after {
           content: '';
-          background: url('../../images/ico-arrow-down.png?1501856811') no-repeat;
+          background: url('../../images/ico-arrow-down.png?1518782796') no-repeat;
           background-position: center center;
           width: 40px;
           height: 40px;
@@ -672,7 +672,7 @@ header .header--banner {
           color: #009cde; }
 
 #contact {
-  background: url('../../images/bg-form.jpg?1501856811') no-repeat;
+  background: url('../../images/bg-form.jpg?1518782796') no-repeat;
   background-position: center center;
   background-size: cover;
   width: 100%;
@@ -763,13 +763,29 @@ header .header--banner {
       #contact .contact--wrapper form button:hover span i {
         background-position: bottom center; }
       #contact .contact--wrapper form button span i {
-        background: url('../../images/ico-arrow-right.png?1501856811') no-repeat;
+        background: url('../../images/ico-arrow-right.png?1518782796') no-repeat;
         background-position: top center;
         display: block;
         width: 13px;
         height: 11px;
         float: right;
         margin: 8px 0 0 13px; }
+  #contact .contact--gestor {
+    font-family: "Raleway", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 4em;
+    width: 100%;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: #044f6f; }
+    #contact .contact--gestor .ico-telefone {
+      width: 23px;
+      height: 19px;
+      background: url("../../images/ico-phone.png");
+      margin: 0 10px;
+      display: inline-block;
+      vertical-align: sub; }
 
 footer .footer--wrapper {
   width: 95%;
@@ -805,7 +821,7 @@ footer .footer--wrapper {
     text-align: center;
     font-weight: 400; }
   .info--wrapper .info {
-    background: url('../../images/info-desk.png?1501856811') no-repeat;
+    background: url('../../images/info-desk.png?1518782796') no-repeat;
     background-position: center center;
     width: 100%;
     max-width: 740px;
@@ -815,7 +831,7 @@ footer .footer--wrapper {
     position: relative; }
     @media (max-width: 1120px) {
       .info--wrapper .info {
-        background: url('../../images/?1517933880') no-repeat;
+        background: url('../../images/?1520621768') no-repeat;
         margin: 0 auto; } }
     .info--wrapper .info .info--img-resp--container {
       display: none; }
@@ -1043,7 +1059,7 @@ footer .footer--wrapper {
     display: none; }
     .faq .faq-open:checked ~ .faq-btn:before {
       content: "";
-      background: url('../../images/faq-arrow-up.png?1517862545') no-repeat;
+      background: url('../../images/faq-arrow-up.png?1518782796') no-repeat;
       width: 14px;
       height: 9px;
       display: block; }
@@ -1058,7 +1074,7 @@ footer .footer--wrapper {
     font-family: "Raleway", sans-serif;
     content: "";
     float: right;
-    background: url('../../images/faq-arrow-down.png?1517862543') no-repeat;
+    background: url('../../images/faq-arrow-down.png?1518782796') no-repeat;
     width: 14px;
     height: 9px;
     display: block;
