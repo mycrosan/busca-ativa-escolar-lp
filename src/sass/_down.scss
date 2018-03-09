@@ -2,7 +2,7 @@
 	@extend .clearfix;
 
 	width: 95%;
-	max-width: 780px;
+	max-width: 1060px;
 
 	display: block;
 	position: relative;
@@ -15,6 +15,8 @@
 	}
 
 	.down--subtitle {
+		@extend .clearfix;
+
 		width: 100%;
 		max-width: 720px;
 
@@ -34,8 +36,8 @@
 
 			float: left;
 
-			width: calc(100% /3 - 1px);
-			height: 300px;
+			width: calc(100% /4 - 1px);
+			min-height: 300px;
 			padding: 0 20px;
 
 			cursor: pointer;
@@ -59,6 +61,8 @@
 			}
 
 			.img-hover {
+				@extend .clearfix;
+
 				width: 180px;
 				height: 160px;
 
@@ -81,7 +85,7 @@
 				&:after {
 					content: '';
 
-					background: image-url('ico-arrow-down.png') no-repeat;
+					background: image_url('ico-arrow-down.png') no-repeat;
 					background-position: center center;
 
 					width: 40px;
@@ -128,6 +132,29 @@
 			p {
 				text-align: center;
 				color: $darkgrey;
+			}
+		}
+
+		.down-manual {
+			ul {
+				margin: 30px 0 0 0;
+
+				li {
+					a {
+						font-size: 15px;
+						font-family: $fontSec;
+						font-weight: 300;
+
+						color: $darkgrey;
+						line-height: 1.667;
+
+						margin: 20px 0;
+
+						&:hover {
+							color: $blue;
+						}
+					}
+				}
 			}
 		}
 	}

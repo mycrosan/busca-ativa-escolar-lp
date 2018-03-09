@@ -5,8 +5,12 @@
 }
 
 b, strong { font-weight: bold; }
-
 a { text-decoration: none; }
+i  { font-style: italic; }
+sup {
+	font-size: 10px;
+	display: block;
+}
 
 .container {
 	@extend .clearfix;
@@ -131,3 +135,19 @@ section {
 }
 
 footer { padding: 25px 0; }
+
+.bam--section {
+	@extend .clearfix;
+
+	h3 {
+		font-size: 25px;
+		font-family: $fontPri;
+
+		line-height: 1;
+		text-align: center;
+
+		margin: 15px 0 15px 0;
+
+		span { font-size: 35px; }
+	}
+}

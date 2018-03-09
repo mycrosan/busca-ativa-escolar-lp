@@ -17,6 +17,7 @@ $post = [
     "E-mail" => $_POST["mail"],
     "Telefone" => $_POST["tel"],
     "Municipio" => $_POST["mun"],
+    "UF" => $_POST["uf"],
     "Mensagem" => $_POST["text"],
     "Endereço IP" => $_SERVER['REMOTE_ADDR'],
     "Navegador" => $_SERVER['HTTP_USER_AGENT'],
