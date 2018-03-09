@@ -782,14 +782,14 @@ header .header--banner {
     background-color: #044f6f; }
     #contact .contact--gestor .contact-phone {
       font-family: "Raleway", sans-serif;
-      font-weight: bold; }
+      font-weight: bold;
+      font-size: 27px; }
     #contact .contact--gestor .ico-telefone {
-      width: 23px;
-      height: 19px;
+      width: 28px;
+      height: 23px;
       background: url("../../images/ico-phone.png");
       margin: 0 10px;
-      display: inline-block;
-      vertical-align: sub; }
+      display: inline-block; }
 
 footer .footer--wrapper {
   width: 95%;
@@ -835,7 +835,7 @@ footer .footer--wrapper {
     position: relative; }
     @media (max-width: 1120px) {
       .info--wrapper .info {
-        background: url('../../images/?1520621768') no-repeat;
+        background: url('../../images/?1520629532') no-repeat;
         margin: 0 auto; } }
     .info--wrapper .info .info--img-resp--container {
       display: none; }
