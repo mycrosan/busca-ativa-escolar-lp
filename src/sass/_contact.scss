@@ -141,11 +141,16 @@
 		font-family: $fontSec;
 		font-size: 17px;
 		font-weight: 400;
-		line-height: 4em;
+		line-height: 1em;
+		padding: 30px 0;
 		width: 100%;
 		color: $white;
 		text-align: center;
 		background-color: #044f6f;
+		.contact-phone{
+			font-family: $fontSec;
+			font-weight: bold;
+		}
 		.ico-telefone{
 			width: 23px;
 			height: 19px;

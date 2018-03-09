@@ -774,11 +774,15 @@ header .header--banner {
     font-family: "Raleway", sans-serif;
     font-size: 17px;
     font-weight: 400;
-    line-height: 4em;
+    line-height: 1em;
+    padding: 30px 0;
     width: 100%;
     color: #FFFFFF;
     text-align: center;
     background-color: #044f6f; }
+    #contact .contact--gestor .contact-phone {
+      font-family: "Raleway", sans-serif;
+      font-weight: bold; }
     #contact .contact--gestor .ico-telefone {
       width: 23px;
       height: 19px;
