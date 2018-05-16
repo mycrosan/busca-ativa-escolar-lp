@@ -11487,8 +11487,8 @@ $(function() {
 //AJAX
 $('form').submit(function(e) {
 	e.preventDefault();
-	var button = $(".button");
-	button.attr("disabled");
+	var button = $(".btn-submit");
+	button.prop("disabled", true);
 	button.removeClass("yellow");
 	$.ajax({
 		method: this.method,
