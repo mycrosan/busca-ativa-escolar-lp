@@ -690,19 +690,18 @@
 
 <script>
 	function formSubmitSend() {
-        var track = document.querySelector('.hidden-track');
-        var val = JSON.parse(track.value || '[]');
-        val.push("Submit Send: "+ $('form').serialize());
+        var val = JSON.parse(localStorage.getItem('track') || '[]');
+        val.push(getTime()+"Submit Send: "+ $('form').serialize());
 
-        track.value = JSON.stringify(getTime()+val);
+        localStorage.setItem('track', JSON.stringify(val));
+        document.querySelector('.hidden-track').value = JSON.stringify(val);
 	}
 
 	function formSubmitClick() {
-	    var track = document.querySelector('.hidden-track');
-	    var val = JSON.parse(track.value || '[]');
+	    var val = JSON.parse(localStorage.getItem('track') || '[]');
         val.push(getTime()+"try submit form... form is " + (document.forms[0].checkValidity() ? 'valid' : 'invalid'));
 
-        track.value = JSON.stringify(val);
+        localStorage.setItem('track', JSON.stringify(val));
 	}
 
 	function getTime() {
