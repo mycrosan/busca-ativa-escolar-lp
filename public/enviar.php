@@ -12,6 +12,10 @@ use Mailgun\Mailgun;
 $dotenv = new Dotenv\Dotenv(__DIR__."/..");
 $dotenv->load();
 
+if ($_POST['track']) {
+    error_log($_POST['track'], 3, './post.log');
+}
+
 $post = [
     "Nome" => $_POST["name"],
     "E-mail" => $_POST["mail"],

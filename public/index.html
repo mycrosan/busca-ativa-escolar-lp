@@ -624,7 +624,8 @@
 			Se você desejar falar conosco, preencha o formulário a seguir que entraremos em contato o mais breve possível.<br />&nbsp;
 		</p>
 
-		<form action="enviar.php" method="post">
+		<form action="enviar.php" method="post" onsubmit="formSubmitSend()">
+			<input class="hidden-track" type="hidden" name="track">
 			<div class="form-row">
 				<input type="text" name="name" placeholder="Seu nome" class="field-full" required>
 			</div>
@@ -648,7 +649,7 @@
 				<textarea rows="4" cols="50" name="text" class="field-text">Escreva sua mensagem aqui!</textarea>
 			</div>
 
-			<button class="button yellow btn-submit">
+			<button class="button yellow btn-submit" onclick="formSubmitClick()">
 					<span>
 						Enviar <i></i>
 					</span>
@@ -687,6 +688,35 @@
 <link rel="stylesheet" href="dist/css/libs.css?v=2.0"/>
 <link rel="stylesheet" href="dist/css/app.css?v=2.0"/>
 
+<script>
+	function formSubmitSend() {
+        var track = document.querySelector('.hidden-track');
+        var val = JSON.parse(track.value || '[]');
+        val.push("Submit Send: "+ $('form').serialize());
+
+        track.value = JSON.stringify(getTime()+val);
+	}
+
+	function formSubmitClick() {
+	    var track = document.querySelector('.hidden-track');
+	    var val = JSON.parse(track.value || '[]');
+        val.push(getTime()+"try submit form... form is " + (document.forms[0].checkValidity() ? 'valid' : 'invalid'));
+
+        track.value = JSON.stringify(val);
+	}
+
+	function getTime() {
+        var currentdate = new Date();
+        return "["
+			+ currentdate.getDate() + "/"
+            + (currentdate.getMonth()+1)  + "/"
+            + currentdate.getFullYear() + " @ "
+            + currentdate.getHours() + ":"
+            + currentdate.getMinutes() + ":"
+            + currentdate.getSeconds()
+			+ "]";
+	}
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
 
 <script src="dist/js/libs.js"></script> <!-- Libraries -->
